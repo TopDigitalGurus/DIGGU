@@ -111,16 +111,7 @@
 }.darkTheme{
     --theme-color: var(--dark-gray)
 }
-/* hero colors */
-.darkTheme .hero{
-    --font-color: var(--black);
-    --p-font-color: var(--drak-gray);
-    --theme-color: var(--white);
-}.lightTheme .hero{
-    --font-color: var(--white);
-    --p-font-color: rgb(220,220,220);
-    --theme-color: var(--dark-gray);
-}
+
 /* services colors */
 .darkTheme .services{
     --prime: var(--mid-gray);

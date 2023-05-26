@@ -143,50 +143,16 @@ backOrder.forEach((order)=> {
 
 //order button functionality
 //1
-const orderLabelOne = document.querySelectorAll('.orderLabelOne')
-const checkOne = document.getElementById('designSrvcBox')
-orderLabelOne.forEach((label)=>{
-    label.addEventListener('mouseenter' , ()=>{
-        if(checkOne.checked){
+const orderLabels = document.querySelectorAll('.orderLabel')
+const checks = document.querySelectorAll('.check')
+orderLabels.forEach((label) =>{
+    label.addEventListener('mouseenter' , () => {
+        let labelNumber = label.classList[1].split("")[1]
+        let checkBox = checks[labelNumber - 1]
+        if(checkBox.checked){
             label.removeAttribute('for')
         }else{
-            label.setAttribute('for' , 'designSrvcBox')
-        }
-    })
-})
-//2
-const orderLabelTwo = document.querySelectorAll('.orderLabelTwo')
-const checkTwo = document.getElementById('dvlpSrvcBox')
-orderLabelTwo.forEach((label)=>{
-    label.addEventListener('mouseenter' , ()=>{
-        if(checkTwo.checked){
-            label.removeAttribute('for')
-        }else{
-            label.setAttribute('for' , 'dvlpSrvcBox')
-        }
-    })
-})
-//3
-const orderLabelThree = document.querySelectorAll('.orderLabelThree')
-const checkThree = document.getElementById('cpwrtSrvcBox')
-orderLabelThree.forEach((label)=>{
-    label.addEventListener('mouseenter' , ()=>{
-        if(checkThree.checked){
-            label.removeAttribute('for')
-        }else{
-            label.setAttribute('for' , 'cpwrtSrvcBox')
-        }
-    })
-})
-//6
-const orderLabelFour = document.querySelectorAll('.orderLabelFour')
-const checkFour = document.getElementById('fullBndlBox')
-orderLabelFour.forEach((label)=>{
-    label.addEventListener('mouseenter' , ()=>{
-        if(checkFour.checked){
-            label.removeAttribute('for')
-        }else{
-            label.setAttribute('for' , 'fullBndlBox')
+            label.setAttribute('for' , `${checkBox.getAttribute('id')}`)
         }
     })
 })
