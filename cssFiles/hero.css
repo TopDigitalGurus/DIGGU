@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-position: center right;
     padding-top: 38px;
+    position: relative;
 }.hero::before{
     content: '';
     position: absolute;

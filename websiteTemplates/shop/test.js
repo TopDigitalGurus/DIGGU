@@ -54,6 +54,7 @@ window.addEventListener('scroll' , ()=>{
     let h3Height = hero.querySelector('h3').clientHeight
     hero.style.top = `${h3Height - heroHeight}px`
     let h3rect = hero.querySelector('h3').getBoundingClientRect()
+    console.log(h3rect.top)
     if(h3rect.top <= 0){
         hero.querySelectorAll('h3').forEach((h)=>{
             h.style.opacity = "1"

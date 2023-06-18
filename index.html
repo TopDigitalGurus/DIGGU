@@ -59,13 +59,7 @@
 </script>
 <body>
     <div class="preloader">
-        <div class="logoCanvas">
-            <div id="digguD"></div>
-            <div id="digguI"></div>
-            <div id="digguG"></div>
-            <div id="digguG"></div>
-            <div id="digguU"></div>
-        </div>
+        <div><div></div></div>
     </div>
     <!-- header -->
     <header id="header">
@@ -468,6 +462,11 @@
     <div class="contact" id="contact">
         <h1>CONTACT</h1>
         <form action="https://formsubmit.co/digitalxgurus@gmail.com" method="POST">
+            <!-- form submission customization-->
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <!-- form content -->
             <div class="formContent">
                 <!-- Section one 1 -->
                 <div class="formSecOne formSec">
@@ -525,7 +524,6 @@
 
                 </div>
             </div>
-
             <!-- submit button -->
             <button type="submit">Send</button>
         </form>
