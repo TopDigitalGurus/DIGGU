@@ -162,7 +162,7 @@
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-990px);
+        transform: translateX(-1320px);
     }
 }
 @keyframes scrolling2 {
@@ -195,7 +195,7 @@
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-738px);
+            transform: translateX(-984px);
         }
     }@keyframes scrolling2 {
         0%{
@@ -227,7 +227,7 @@
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-510px);
+            transform: translateX(-680px);
         }
     }@keyframes scrolling2 {
         0%{
@@ -247,6 +247,8 @@
 }.pwc2::before{
     content: 'Clothing Shop Template';
 }.pwc3::before{
+    content: 'Countries Naming Game';
+}.pwc4::before{
     padding: 0;
 }
 .plc1::before{
