@@ -7,7 +7,8 @@
 }
 
 :root{
-    --purple: #7011f5;
+    /* --purple: #7011f5; */
+    --purple: #6938EF;
     --light-purple: #efeefe;
 
     --width-100: 2560px;
@@ -179,6 +180,7 @@ h2{
     max-width: var(var(--width-90));
     text-align: center;
     font-size: calc(var(--size-12)*1.7);
+    font-weight: 900;
 }
 section.section{padding-block: var(--padding-100);}
 
@@ -580,7 +582,7 @@ header {
 
 }
 
-/* #how-we-do-it{
+/* #how-we-do-it{ 
     padding-block: var(--padding-100);
     background-color: var(--light-purple);
 
@@ -677,9 +679,9 @@ header {
             width: max( 4.5vw, 16px);
         }
     }
-}
+} */
 
-#the-machine{
+#the-machine, #the-system{
     background-color: var(--light-purple);
 
     .wrapper{
@@ -687,7 +689,7 @@ header {
         margin-inline: auto;
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        align-items: center;
     }
 
     .text{
@@ -725,12 +727,28 @@ header {
             margin-right: 30px;
         }
     }
+}#the-system{ 
+    h2{text-align: center;}
+    h3{
+        margin-bottom: var(--padding-25);
+        font-size: 45px;
+        font-weight: 600;
+    }h3.first{
+        margin-block: var(--padding-25);
+    }
+    .wrapper{
+        margin-bottom: var(--padding-100);
+    }
 }
 @media only screen and (max-width: 2560px){
-    #the-machine{
+    #the-machine, #the-system{
         .answers-container{
             gap: 25px;
         }
+        h3{
+            font-size: 38px;
+        }
+    
         .answer-wrapper{
             border-radius: 10px;
             padding: 25px;
@@ -743,9 +761,11 @@ header {
         }
     }
 }@media only screen and (max-width: 1920px){
-    #the-machine{
+    #the-machine, #the-system{
         .answers-container{
             gap: 18px;
+        }h3{
+            font-size: 28px;
         }
         .answer-wrapper{
             border-radius: 8px;
@@ -759,9 +779,12 @@ header {
         }
     }
 }@media only screen and (max-width: 1440px){
-    #the-machine{
+    #the-machine, #the-system{
         .answers-container{
             gap: 16px;
+        }
+        h3{
+            font-size: 24px;
         }
         .answer-wrapper{
             border-radius: 8px;
@@ -775,9 +798,12 @@ header {
         }
     }
 }@media only screen and (max-width: 1280px){
-    #the-machine{
+    #the-machine, #the-system{
         .text{
             width: var(--width-55);
+        }
+        h3{
+            font-size: 22px;
         }
         .answers-container{
             gap: 12px;
@@ -794,8 +820,12 @@ header {
         }
     }
 }@media only screen and (max-width: 1024px){
-    #the-machine{
-        h2{text-align: center;}
+    #the-machine, #the-system{
+        h3{
+            text-align: center;
+            margin-top: var(--padding-25);
+            font-size: 18px;
+        }
         .wrapper{
             flex-direction: column;
             align-items: center;
@@ -804,13 +834,14 @@ header {
             width: 100%;
         }
         img.big-img{
-            width: 60%;
+            width: 50%;
             margin-top: var(--padding-50);
         }
         .answers-container{
             width: 82%;
             margin-inline: auto;
             gap: 10px;
+            align-items: center;
         }
         .answer-wrapper{
             width: 100%;
@@ -825,7 +856,7 @@ header {
         }
     }
 }@media only screen and (max-width: 768px){
-    #the-machine{
+    #the-machine, #the-system{
         
         img.big-img{
             width: 350px;
@@ -847,8 +878,8 @@ header {
         }
     }
 }@media only screen and (max-width: 568px){
-    #the-machine{
-
+    #the-machine, #the-system{
+        h3{font-size: 15px;}
         
         img.big-img{
             width: 80%;
@@ -870,7 +901,8 @@ header {
             }
         }
     }
-} */
+} 
+
 
 #what-we-do{
     padding-top: 0;
